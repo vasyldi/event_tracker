@@ -1,0 +1,32 @@
+{
+  "name": "event_tracker",
+  "version": "1.0.0",
+  "description": "Apollo GraphQl server for event tracking",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix",
+    "dev": "nodemon -r dotenv/config src/index.js dotenv_config_path=$(pwd)/.env.development",
+    "start": "node -r dotenv/config src/index.js"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "server",
+    "event",
+    "tracking"
+  ],
+  "author": "vasyldi",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.19.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  }
+}
